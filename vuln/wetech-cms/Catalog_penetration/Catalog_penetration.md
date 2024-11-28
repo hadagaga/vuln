@@ -1,7 +1,3 @@
----
-typora-root-url: ./img
----
-
 **BUG_Author:**
 
 hadagaga
@@ -75,4 +71,4 @@ name=../../../indexPic/hadagaga123
 
 ​	我们访问http://localhost:8888/resources/indexPic/hadagaga123.tar.gz
 
-![image-20241127231733666](/image-20241127231733666-1732721891177-8-1732797677430-2-1732800525202-1.png)
+![image-20241127231733666](img/image-20241127231733666-1732721891177-8-1732797677430-2-1732800525202-1.png)
